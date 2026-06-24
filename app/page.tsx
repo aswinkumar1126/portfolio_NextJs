@@ -11,17 +11,109 @@ export default  function Home() {
       setData(data?.users);
     })
   },[]);
-  console.log(data,'data');
 
+  useEffect(()=>{
+    fetch('/api/skill').then((res)=> res.json()).then((data)=>{
+
+      console.log(data, 'skill data');
+    })
+  },[]);
+  console.log(data,'data');
+  const skill = fetch("/api/skill",{headers : {"Content-Type": "application/json"} , method : 'POST' ,body : null })
 
   return (
     <div>
-      <Layout />
+      
       Hello
       {data.map((user:any)=>(
           <div key={user.id}>{user.name}</div>
         ))
       }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+       {data.map((user:any)=>(
+          <div key={user.id}>{user.name}</div>
+        ))
+      }
+       {data.map((user:any)=>(
+          <div key={user.id}>{user.name}</div>
+        ))
+      }
+       {data.map((user:any)=>(
+          <div key={user.id}>{user.name}</div>
+        ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+       {data.map((user:any)=>(
+          <div key={user.id}>{user.name}</div>
+        ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      {data.map((user: any) => (
+        <div key={user.id}>{user.name}</div>
+      ))
+      }
+      
     </div>
   );
 }

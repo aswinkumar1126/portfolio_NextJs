@@ -29,9 +29,10 @@ export default function RootLayout({
   return (
     <html
       lang="en" className={cn("font-sans", inter.variable)}
+      suppressHydrationWarning={true}
     >
       <AllProvider>
-        <body className="min-h-full flex flex-col">{children}</body>
+        <body className="flex flex-col">{children}</body>
       </AllProvider>
     </html>
   );
